@@ -1,7 +1,7 @@
 <!-- Navigation -->
         <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
             <div class="navbar-header">
-				<a class="navbar-brand" href="index.php">FCHMAINTENANCES</a>
+				<a class="navbar-brand" href="index.php">PISOS DE LA BAJURA S.A.</a>
             </div>
            
             <ul class="nav navbar-top-links navbar-right">
