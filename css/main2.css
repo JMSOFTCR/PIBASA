@@ -3,10 +3,7 @@ body{
 
 }
 
-.mainC{
-      background: #dedede;
-    border-radius: 35px;
-}
+
 
 .contenedor{
     display: flex;

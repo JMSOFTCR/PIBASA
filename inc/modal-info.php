@@ -8,13 +8,13 @@
       
         <!-- Modal Header -->
         <div class="modal-header">
-          <h4 style="color:black" class="modal-title">Anthony Chan</h4>
+          <h4 style="color:black" class="modal-title">Nombre Personal</h4>
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
         
         <!-- Modal body -->
         <div class="modal-body">
-          Modal body..
+         Información acerca de nuestro empleado
         </div>
         
         <!-- Modal footer -->

@@ -9,7 +9,7 @@
     <meta name="author" content="">
       
       <link href="vendor/bootstrap/css/footer.css" rel="stylesheet">
-    <title>FCHMAINTENANCE</title>
+    <title>PISOS DE LA BAJURA S.A.</title>
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -26,7 +26,7 @@
 </head>
 
 
-  <body>
+  <body style="background-color:#FFFF;">
 	
 	<!-- End WOWSlider.com BODY section -->
 
@@ -50,9 +50,9 @@
 <div class="post">
     <!-- colored -->
     <div class="ih-item square colored effect6 from_top_and_bottom"><a href="equipment_restoration.php">
-        <div class="img"><img src="img/Main/Cleaning_Equipment_Repair.jpg" style="height:185px;" alt="img"></div>
+        <div class="img"><img src="img/Main/vidrioblock.jpg" style="height:185px;" alt="img"></div>
         <div class="info">
-          <h3>Equipment Maintenance and Repair</h3>
+          <h3>Vidrio Block</h3>
 
         </div></a></div>
     <!-- end colored -->
@@ -60,9 +60,9 @@
 <div class="post">
     <!-- colored -->
     <div class="ih-item square colored effect6 from_top_and_bottom"><a href="parts_and_accessories.php">
-        <div class="img"><img src="img/Main/parts_and_accessories.PNG" style="height:185px;" alt="img"></div>
+        <div class="img"><img src="img/Main/Mural.JPG" style="height:185px;" alt="img"></div>
         <div class="info">
-          <h3>Parts and Accessories</h3>
+          <h3>Imagenes y Murales</h3>
 
         </div></a></div>
     <!-- end colored -->
@@ -70,9 +70,9 @@
 <div class="post"> 
     <!-- colored -->
     <div class="ih-item square colored effect6 from_top_and_bottom"><a href="batteries.php">
-        <div class="img"><img src="img/Main/New_Batteries.jpg" style="height:185px;" alt="img"></div>
+        <div class="img"><img src="img/Main/Lamosa.jpg" style="height:185px;" alt="img"></div>
         <div class="info">
-          <h3>New Batteries</h3>
+          <h3>Pisos y Enchapados Españoles</h3>
 
         </div></a></div>
     <!-- end colored -->
@@ -80,9 +80,9 @@
   <div class="post"> 
     <!-- colored -->
     <div class="ih-item square colored effect6 from_top_and_bottom"><a href="#">
-        <div class="img"><img src="img/Main/Cleaning_Supplies.jpg" style="height:185px;" alt="img"></div>
+        <div class="img"><img src="img/Main/ALTTOGLASS.jpg" style="height:185px;" alt="img"></div>
         <div class="info">
-          <h3>Cleaning Supplies</h3>
+          <h3>AlttoGlass</h3>
 
         </div></a></div>
     <!-- end colored -->
@@ -90,19 +90,19 @@
   <div class="post"> 
     <!-- colored -->
     <div class="ih-item square colored effect6 from_top_and_bottom"><a href="green_cleaning.php">
-        <div class="img"><img src="img/Main/Green_Cleaning.jpg" style="height:185px;" alt="img"></div>
+        <div class="img"><img src="img/Main/Revestimiento.jpg" style="height:185px;" alt="img"></div>
         <div class="info">
-          <h3>Green Cleaning</h3>
+          <h3>Revestimiento</h3>
 
         </div></a></div>
     <!-- end colored -->
   </div> 
   <div class="post"> 
     <!-- colored -->
-    <div class="ih-item square colored effect6 from_top_and_bottom"><a href="equipment_seccion.php">
-        <div class="img"><img src="img/Main/New_Equipment.jpg" style="height:185px;" alt="img"></div>
+    <div class="ih-item square colored effect6 from_top_and_bottom"><a href="Mortero.php">
+        <div class="img"><img src="img/Main/Mortero.jpg" style="height:185px;" alt="img"></div>
         <div class="info">
-          <h3>New Equipment</h3>
+          <h3>Morteros</h3>
 
         </div></a></div>
     <!-- end colored -->
@@ -122,21 +122,20 @@
         
       <div class="row scrollflow scrollflow -pop -opacity" >
         <div class="col-lg-6">
-          <h2 class="">Learn more about FCH Maintenance</h2>
-          <h4 style="color: black" class="scrollflow -pop -opacity">We think about our clients</h4>
-          <h6>By that reason we offer you:</h6>
+          <h2>Conoce más acerca de <br> Pisos De La Bajura</h2>
+          <h4 style="color: black" class="scrollflow -pop -opacity">Nosotros pensamos en nuestros clientes</h4>
+          <h6 style="color: black">Por esa razón podemos ofrecerte:</h6>
             <ul>
-            <li>Trust</li>
-            <li>Reliability</li>
-            <li>Responsibility</li>
-            <li>Commitment</li>
+            <li>confiabilidad</li>
+            <li>Responsabilidad</li>
+            <li>Compromiso</li>
 
 
           </ul>
-          <p>We hope you can find everything you need. FCH Maintenance is focused on providing high-quality service and customer satisfaction - we will do everything we can to meet your expectations.</p>
+          <p>Esperamos que pueda encontrar todo lo que necesita. Pisos De La Bajura se centra en proporcionar un servicio de alta calidad y la satisfacción del cliente; haremos todo lo posible para cumplir con sus expectativas.</p>
         </div>
         <div class="col-lg-6">
-       <iframe width="300" height="300" src="https://www.youtube.com/embed/zbcghvr0biU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe width="300" height="300" src="https://www.youtube.com/embed/xqtqJ5pIcXc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
       </div> 
       
@@ -146,41 +145,17 @@
             <hr>
         
        <div class="container">
-        <div class="row">
-<!--
-         <div class="col-lg-12">
-             <button class="prev">&laquo;</button>
-<button class="next">&raquo;</button>
+      
+       
 
-<div class="carousel-no-style">
-    <ul>
-        <li><img src="img/suppliers/advance.jpg" style="width:150px; height:118px;"></li>
-        <li><img src="img/suppliers/clarke.jpg" style="width:150px; height:118px;"></li>
-        <li><img src="img/suppliers/aztec.jpg" style="width:150px; height:118px;"></li>
-        <li><img src="img/suppliers/betco.jpg" style="width:150px; height:118px;"></li>
-        <li><img src="img/suppliers/viper.jpg" style="width:150px; height:118px;"></li>
-    </ul>
-</div>
-        </div>
--->
-                <div style="height:60px;" ></div>
-        <div style="text-align:center" class="col-lg-12 scrollflow scrollflow -pop -opacity">
-          <h2 >Our brands</h2>
-          <h4 style="color:black">We represent these brands</h4>
-          <h6>Nationally and internationally, we manage the best brands in the market to provide an excellent service to our customers</h6>
-       
-        </div>
-      </div>
-       
-      <hr>
 
       <!-- Call to Action Section -->
       <div class="row mb-4 scrollflow scrollflow -pop -opacity">
         <div class="col-md-8">
-          <p>We hope to see you again! Check back later for new updates to our website. There's much more to come!</p>
+          <p>¡Esperamos verte de nuevo! Vuelve más tarde para ver nuevas actualizaciones en nuestro sitio web. ¡Hay mucho más por venir!</p>
         </div>
         <div class="col-md-4">
-          <a class="btn btn-lg btn-success btn-block animated infinite pulse" href="contact.php" style=" box-shadow: 1px 2px 5px #000000; ">Our Services</a>
+          <a class="btn btn-lg btn-success btn-block animated infinite pulse" href="contact.php" style=" box-shadow: 1px 2px 5px #000000; ">Contactanos!</a>
         </div>
       </div>
  </div>

@@ -119,7 +119,7 @@
       <div class="modal-content bg-success">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title"><img src="img/logo_nav.png" href="index.php" width="80%;" class="animated bounceInLeft"></h4>
+          <h4 class="modal-title"><img src="img/all_logos/PIBASA.png" href="index.php" width="25%;" class="animated bounceInLeft"></h4>
         </div>
           <style>
            
@@ -127,10 +127,10 @@
         <div class="modal-body">
           <form method="post" action='proccess/login.php' name="login_form">
               <p><input type="text" class="span3" name="username" placeholder="Email" style="border-radius:7px;"></p>
-              <p><input type="password" class="span3" name="password" placeholder="Password" style="border-radius:7px;"></p>
+              <p><input type="password" class="span3" name="password" placeholder="Contraseña" style="border-radius:7px;"></p>
               <br>
-              <p><button type="submit" class="btn btn-primary animated infinite pulse">Sign in</button>
-                <a href="#">Forgot Password?</a>
+              <p><button type="submit" class="btn btn-primary animated infinite pulse">Ingresar</button>
+                <a href="#">Olvidó su contraseña?</a>
               </p>
             </form>
             <center>
@@ -145,7 +145,7 @@
         </div>
           
         <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
         </div>
       </div>
       

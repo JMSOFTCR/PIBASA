@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VisualLightBox>
+    <Gallery version="2.5">
+        <Settings>
+            <AppName>WOW Slider</AppName>
+            <AppUrlS>WOWSlider.com</AppUrlS>
+            <AppVersion>8.8</AppVersion>
+            <AutoPlay>true</AutoPlay>
+            <AutoPlayVideo>false</AutoPlayVideo>
+            <Captions>true</Captions>
+            <CaptionsEffect>parallax</CaptionsEffect>
+            <Controls>true</Controls>
+            <FontSize>23</FontSize>
+            <FullScreen>false</FullScreen>
+            <GalleryName>slide</GalleryName>
+            <GallerySuffix>1</GallerySuffix>
+            <HtmlCharset>UTF-8</HtmlCharset>
+            <ImageAspectRatio>true</ImageAspectRatio>
+            <ImageEffect>slices</ImageEffect>
+            <ImageFillColor>#000000</ImageFillColor>
+            <ImageHeight>450</ImageHeight>
+            <ImageQuality>90</ImageQuality>
+            <ImageShrink2>false</ImageShrink2>
+            <ImageStretch>true</ImageStretch>
+            <ImageTemplate>C:/Program Files (x86)/WOW Slider/templates/backgnd/dark_matter/</ImageTemplate>
+            <ImageTemplateName>Dark Matter</ImageTemplateName>
+            <ImageWidth>960</ImageWidth>
+            <Images>true</Images>
+            <JoomlaType>2.5</JoomlaType>
+            <OneLoop>false</OneLoop>
+            <OrderRandom>false</OrderRandom>
+            <PlayPause>true</PlayPause>
+            <Preloader>false</Preloader>
+            <PublishFileName>C:/xampp/htdocs/PIBASA/slider.php</PublishFileName>
+            <PublishIndex>slider.php</PublishIndex>
+            <PublishPath>C:/xampp/htdocs/PIBASA</PublishPath>
+            <PublishPreview>true</PublishPreview>
+            <PublishType>file</PublishType>
+            <RelativePath>false</RelativePath>
+            <ShowBullets>1</ShowBullets>
+            <ShowControls>false</ShowControls>
+            <ShowTooltips>1</ShowTooltips>
+            <SizeStyle>2</SizeStyle>
+            <SlideshowDelay>20</SlideshowDelay>
+            <SlideshowDuration>20</SlideshowDuration>
+            <SoundEnable>0</SoundEnable>
+            <SoundFileName></SoundFileName>
+            <StopOnHover>false</StopOnHover>
+            <SwipeSupport>2</SwipeSupport>
+            <TemplateColor>#00ff00</TemplateColor>
+            <TemplateFont>Nunito</TemplateFont>
+            <TemplateName>dark_matter</TemplateName>
+            <ThumbAlign>bottom</ThumbAlign>
+            <ThumbFormat>jpg</ThumbFormat>
+            <ThumbHeight>48</ThumbHeight>
+            <ThumbQuality>90</ThumbQuality>
+            <ThumbWidth>0</ThumbWidth>
+            <Thumbnails>false</Thumbnails>
+            <TooltipPos>bottom</TooltipPos>
+            <noFrame>0</noFrame>
+        </Settings>
+        <Images RelativePath="false">
+            <Image>
+                <url>C:/xampp/htdocs/PIBASA/img/Carrusel/cropped-AMB-01-ARTESA3.jpg</url>
+                <title>Porcelanatos de alta calidad</title>
+                <filesize>433994</filesize>
+            </Image>
+            <Image>
+                <url>C:/xampp/htdocs/PIBASA/img/Carrusel/cropped-Piso-Nobile-siena-20.5x61.5.jpg</url>
+                <title>Calidad española</title>
+                <filesize>223602</filesize>
+            </Image>
+            <Image>
+                <url>C:/xampp/htdocs/PIBASA/img/Carrusel/terraza-azulejo-tiles-ceramica-exteriores-verano-decorar-summer-ikea-proyectos-VALDEBEBAS-PAMESA-FACHADA-VENTILADA-AZULEJO-TILES-PAVIMENTO-REVESTIMIENTO-FLOOR-WALL-TILES-DECOR-INTERIOR-HOME-TRENDS.jpg</url>
+                <title>Los mejores acabados para exteriores</title>
+                <filesize>2330392</filesize>
+            </Image>
+        </Images>
+    </Gallery>
+</VisualLightBox>

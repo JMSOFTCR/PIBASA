@@ -34,36 +34,32 @@
     <div class="container">
 
       <!-- Page Heading/Breadcrumbs -->
-      <h1 class="mt-4 mb-3 animated flipInX" style="color:green">Who
-        <small>we are?</small>
+      <h1 class="mt-4 mb-3 animated flipInX" style="color:green">Quiénes
+        <small>somos?</small>
       </h1>
 
       <ol class="breadcrumb">
         <li class="breadcrumb-item">
-          <a href="index.php">Home</a>
+          <a href="index.php">Inicio</a>
         </li>
-        <li class="breadcrumb-item active" style="color:green">About</li>
+        <li class="breadcrumb-item active" style="color:green">Nosotros</li>
       </ol>
 
       <!-- Intro Content -->
       <div class="row">
         <div class="col-lg-6">
-          <img class="img-fluid rounded mb-4 animated bounceInUp" src="img/about/about.jpg" alt="" width="100%">
+          <img class="img-fluid rounded mb-4 animated bounceInUp" src="img/about/equipo.jpg" alt="" width="100%">
         </div>
         <div class="col-lg-6 scrollflow -slide-top -opacity">
-          <h2 style="color:green" class="">Our Story</h2>
-          <h4 style="color:green">We've loved every minute of our journey </h4>
-          <p>FCH Maintenance was founded in 2005 by Anthony Dustyn Chan , we provide all types of maintenance on janitorial & cleaning equipment with certified propane technicians. FCH is a Northern Ontario Company.</p>
-          <p>We aren't some faceless entity way down in Southern Ontario. We don't communicate by fax and mass e-mailers.
+          <h2 style="color:green" class="">Nuestra historia</h2>
+          <h4 style="color:green">Nosotros amamos nuestro trabajo </h4>
+          <p>Somos una empresa consolidada y fundada hace mas de 15 años. Importamos nuestros productos de España, Brasil, México, Guatemala y muchos otros. Ofrecemos gran variedad de cerámica para interiores y exteriores, inodoros, lavamanos y acessorios para baños.</p>
+          <p>No dude de consultar nuestro personal para brindarle ayuda para escoger el mejor producto y consejos para instalación apropiada y duradera.
             <br>
             <br>
-           FCH Maintenance strives to maintain a personal connection with our clients.
+           Somos los mejores en la zona de Guanacaste en cuanto la variedad y precio.
             </p>
-          <p>We understand the unique challenges faced by Northern Ontario businesses. We know how to survive our winter conditions. With over 15 years of experience in this industry we know how to get results.
-            <br>
-            <br>
-            Our families shop at the stores we care for. We service our neighbours. That's why we care. That's what makes the difference.
-            </p>
+          
         </div>
       </div>
       <!-- /.row -->
@@ -85,42 +81,42 @@
         <hr>
       <!-- Team Members -->
         <div class="container scrollflow -slide-right -opacity ">
-      <h2>Our Team</h2>
+      <h2>Nuestro Equipo</h2>
         <div class="row">
   <div class="col-sm-4">
  
     <!-- normal -->
     <div class="ih-item square effect4"><a data-toggle="modal" data-target="#ModalAnthony">
-        <div class="img"><img src="img/about/Anthony_Chan.jpeg" alt="img"></div>
+        <div class="img"><img src="img/about/user.png" alt="img"></div>
         <div class="mask1"></div>
         <div class="mask2"></div>
         <div class="info">
-          <h3>Anthony Chan</h3>
-          <p>Ownear</p>
+          <h3>Marvin Vargas</h3>
+          <p>Administrador</p>
         </div></a></div>
     <!-- end normal -->
  
   </div>  
      <div class="col-sm-4">
     <!-- colored -->
-    <div class="ih-item square colored effect4"><a data-toggle="modal" data-target="#ModalElvira">
-        <div class="img"><img src="img/about/Elvira_ca%C3%B1as_Rodriguez.jpeg" alt="img" style="width:400px;"></div>
+    <div class="ih-item square colored effect4"><a data-toggle="modal" data-target="#ModalAnthony">
+        <div class="img"><img src="img/about/user.png" alt="img"></div>
         <div class="mask1"></div>
         <div class="mask2"></div>
         <div class="info">
-          <h3>Elvira Cañas Rodriguez</h3>
-          <p>Quality Control Manager</p>
+          <h3>Sandra Guerrero</h3>
+          <p>Dueña</p>
         </div></a></div>
     <!-- end colored -->  
     </div>
   <div class="col-sm-4">
  
     <!-- normal -->
-      <div class="ih-item square colored effect6 from_top_and_bottom"><a data-toggle="modal" data-target="#ModalThomas">
-        <div class="img"><img src="img/about/Thomas%20Clarke.jpeg" alt="img"></div>
+      <div class="ih-item square colored effect6 from_top_and_bottom"><a data-toggle="modal" data-target="#ModalAnthony">
+        <div class="img"><img src="img/about/user.png" alt="img"></div>
         <div class="info">
-          <h3>Thomas Clarke</h3>
-          <p>General Manager</p>
+          <h3>Juan</h3>
+          <p>Agente de ventas</p>
         </div></a></div>
     <!-- end colored -->
     <!-- end normal -->
@@ -129,35 +125,37 @@
     <div class="col-sm-4">
         <!-- normal -->
     <!-- colored -->
-    <div class="ih-item square colored effect8 scale_up"><a data-toggle="modal" data-target="#ModalEmanuen">
-        <div class="img"><img src="img/about/emanuen.jpg" alt="img" style="height:270px"></div>
+    <div class="ih-item square colored effect8 scale_up"><a data-toggle="modal" data-target="#ModalAnthony">
+        <div class="img"><img src="img/about/user.png" alt="img"></div>
         <div class="info">
-          <h3>Emanuen Chan</h3>
-          <p>Electronic Technician</p>
+          <h3>Carlos</h3>
+          <p>Agente de ventas</p>
         </div></a></div>
     <!-- end colored -->
     <!-- end normal -->
     </div>
     <div class="col-sm-4">
     <!-- normal -->
-    <div class="ih-item square effect3 bottom_to_top"><a data-toggle="modal" data-target="#ModalDouglas">
-        <div class="img"><img src="img/about/Douglas_chan.jpeg" alt="img"></div>
+    <div class="ih-item square effect3 bottom_to_top"><a data-toggle="modal" data-target="#ModalAnthony">
+        <div class="img"><img src="img/about/user.png" alt="img"></div>
         <div class="info">
-          <h3>Douglas Chan</h3>
-          <p>Electro Mechanic Engineer</p>
+          <h3>Eduardo</h3>
+          <p>Agente de ventas</p>
         </div></a></div>
     <!-- end normal --> 
     </div>
     <div class="col-sm-4">
-      <!-- normal -->
-    <div class="ih-item square effect5 left_to_right"><a data-toggle="modal" data-target="#ModalAshly">
-        <div class="img"><img src="img/about/Ashley.jpeg" alt="img"></div>
+        <!-- normal -->
+    <!-- colored -->
+    <div class="ih-item square colored effect8 scale_up"><a data-toggle="modal" data-target="#ModalAnthony">
+        <div class="img"><img src="img/about/user.png" alt="img"></div>
         <div class="info">
-          <h3>Ashly Clarke</h3>
-          <p>Sales Manager</p>
+          <h3>Meylin</h3>
+          <p>Agente de ventas</p>
         </div></a></div>
+    <!-- end colored -->
     <!-- end normal -->
-  </div>  
+    </div>
 
  
 </div>

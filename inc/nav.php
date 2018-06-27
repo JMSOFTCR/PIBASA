@@ -25,10 +25,10 @@
   crossorigin="anonymous">
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<nav class="navbar navbar-expand-lg"style="background-color: #116deb;">
+<nav class="navbar navbar-expand-lg"style="background-color: #313131;">
     <div class="container">
         <a class="navbar-brand" href="#">
-           <img src="img/logo_nav.png" href="index.php" width="90%" height="100%" class="animated bounceInLeft">
+           <img src="img/all_logos/PIBASA.png" href="index.php" width="30%" class="animated bounceInLeft">
        </a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" style="background-color:rgba(87, 240, 74, 0.3);">
@@ -38,8 +38,9 @@
         <div class="collapse navbar-collapse flex-column align-items-end" id="navbarCollapse">
             <!-- navbar1 -->
             <div class="navbar-nav mb-lg-0">
-                <h5 class="nav-item nav-link" href="#" style="color:#7ff57f; margin-right:100px;"><i class="fa fa-phone text-white"></i> : 1-800-678-0502</h5>
-                <a class="nav-item nav-link" href=""><i class="fa fa-facebook text-white"></i></a>
+                <h5 class="nav-item nav-link" href="#" style="color:#7ff57f; margin-right:0px;"><i class="fa fa-phone text-white"></i> : 2686-7363</h5>
+                 <a class="nav-item nav-link" href="#" style="color:#7ff57f;"><i class="fa fa-envelope-o"></i> pisosdelabajurasa@gmail.com</a>
+                <a class="nav-item nav-link" href="https://www.facebook.com/PISOSDELABAJURA/"><i class="fa fa-facebook text-white"></i></a>
              
                 <a class="nav-item nav-link" href="#"><i class="fa fa-twitter text-white" ></i></a>
                 
@@ -74,9 +75,9 @@
                             }else{
                                 echo ' 
                                           <a class="nav-item nav-link" href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-user text-white"> Login</i></a>
-                                          	<li id="cartme" style="cursor:pointer">
-                                            <a class="nav-item nav-link" id="cart_control" title="Shopping Cart" data-toggle="popover"><i class="fa fa-shopping-cart fa-fw" id="cartir"></i></a>
-                                            </li>
+                                       <h4><li id="cartme" style="cursor:pointer">
+                                            <a class="nav-item nav-link" id="cart_control" title="Carrito de compras" data-toggle="popover"><i class="fa fa-shopping-cart fa-fw" id="cartir"></i></a>
+                                            </li></h4>
                                  ';
                             }
                         ?>
@@ -88,57 +89,36 @@
             <!-- navbar2 -->
             <ul class="navbar-nav mt-0">
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.php">HOME</a>
-                </li>
-                    <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SERVICES</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="">Cleaning Rental Equipment</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="deliver.php">Equipment Deliver</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="">Equipment Repair</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="equipment_restoration.php">Equipment Restoration</a>       
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="">Maintenance Prevention</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Training</a>
-                        <div class="dropdown-divider"></div>
-                    </div>
+                    <a class="nav-link" href="index.php">INICIO</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PRODUCTS</a>
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PRODUCTOS</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="equipment_seccion.php">New Equipment</a>
+                        <a class="dropdown-item" href="equipment_seccion.php">Vidrio Block</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="">Cleaning Chemicals</a>
+                        <a class="dropdown-item" href="">Imagenes y Murales</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="Floor_seccion.php">Floor Care</a>
+                        <a class="dropdown-item" href="Floor_seccion.php">Pisos y Enchapes Españoles</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="batteries.php">Batteries</a>
+                        <a class="dropdown-item" href="batteries.php">AlttoGlass</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="parts_and_accessories.php">Parts and Accessories</a>
+                        <a class="dropdown-item" href="parts_and_accessories.php">Revestimiento</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="green_cleaning.php" >Green Cleaning</a>
+                        <a class="dropdown-item" href="green_cleaning.php" >Liquidación</a>
+                        <div class="dropdown-divider"></div>  
+                        <a class="dropdown-item" href="green_cleaning.php" >Morteros</a>
                         <div class="dropdown-divider"></div>  
                     </div>
                 </li>
                  <li class="nav-item">
-                    <a class="nav-link" href="contact.php">CONTACT</a>
+                    <a class="nav-link" href="contact.php">CONTACTENOS</a>
                 </li>
           <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="about.php" id="navbarDropdownAbout" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:white">
-                ABOUT
+                NOSOTROS
               </a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownAbout">
-                <a class="dropdown-item" href="about.php">Who we are</a>
-                  <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="">Our Values</a>
-                  <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="">Mission and Vision</a>
-                  <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="">Training</a>
+                <a class="dropdown-item" href="about.php">QUIÉNES SOMOS?</a>
                   <div class="dropdown-divider"></div>
               </div>
             </li>
