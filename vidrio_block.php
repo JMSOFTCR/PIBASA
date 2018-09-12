@@ -24,7 +24,7 @@
 
       
     <?php include('conn.php');
-     $query=mysqli_query($conn,"select * from product where categoryid = 1 order by product_name");  
+     $query=mysqli_query($conn,"select * from product where categoryid = 2 order by product_name");  
     $nro_reg=mysqli_num_rows($query); 
     $Total = $nro_reg;
 
@@ -40,7 +40,7 @@
         $inicio=0;
       
       
-       $query=mysqli_query($conn,"select * from product where categoryid = 1 order by product_name limit $inicio,$reg_por_pagina");  
+       $query=mysqli_query($conn,"select * from product where categoryid = 2 order by product_name limit $inicio,$reg_por_pagina");  
       
       $can_paginas=ceil($nro_reg / $reg_por_pagina);
       ?>
@@ -59,11 +59,11 @@
     
 <div class="container">
 <div style="height: 50px;"></div>
-    <h1 style=" ">Morteros</h1>
+    <h1 style=" ">Vidrio Block</h1>
       
        <div class="row">
         <div class="col-lg-12">
-            <img src="img/Bannerp/mortero.png" style="width: 80%;">
+            <img src="img/Bannerp/vidrioblock-banner.jpg" style="width: 80%;">
         </div>
         </div>
 <div style="height: 50px;"></div>
@@ -73,7 +73,7 @@
         <li class="breadcrumb-item">
           <a href="index.php" style="color:black">Inicio</a>
         </li>
-        <li class="breadcrumb-item active">Mortero</li>
+        <li class="breadcrumb-item active">Vidrio Block</li>
       </ol>
 
     <a style="color: gray" >Disponemos de <?php echo $Total ?> productos</a>
@@ -132,17 +132,17 @@
            <div align="center">
       <?php
           if($nro_pagina>1)
-              echo "<a style='background-color:#262424; border-radius:5px;' href='Mortero.php?num=".($nro_pagina-1)."'> Anterior ></a> ";
+              echo "<a style='background-color:#262424; border-radius:5px;' href='mobo.php?num=".($nro_pagina-1)."'> Anterior ></a> ";
               
        for ($i=1; $i<=$can_paginas; $i++){
            if ($i==$nro_pagina)
                echo $i." ";
            else 
-               echo "<a href='Mortero.php?num=$i'>$i</a> ";
+               echo "<a href='mobo.php?num=$i'>$i</a> ";
        } 
           
           if($nro_pagina<$can_paginas)
-               echo "<a style='background-color:#262424; border-radius:5px;' href='Mortero.php?num=".($nro_pagina+1)."'> Siguiente ></a> ";
+               echo "<a style='background-color:#262424; border-radius:5px;' href='mobo.php?num=".($nro_pagina+1)."'> Siguiente ></a> ";
           
        ?>
       </div>

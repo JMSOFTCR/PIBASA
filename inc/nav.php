@@ -94,7 +94,7 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PRODUCTOS</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="equipment_seccion.php">Vidrio Block</a>
+                        <a class="dropdown-item" href="vidrio_block.php">Vidrio Block</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="">Imagenes y Murales</a>
                         <div class="dropdown-divider"></div>
@@ -106,7 +106,7 @@
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="green_cleaning.php" >Liquidación</a>
                         <div class="dropdown-divider"></div>  
-                        <a class="dropdown-item" href="green_cleaning.php" >Morteros</a>
+                        <a class="dropdown-item" href="Mortero.php" >Morteros</a>
                         <div class="dropdown-divider"></div>  
                     </div>
                 </li>

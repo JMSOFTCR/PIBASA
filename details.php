@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
       <link href="vendor/bootstrap/css/footer.css" rel="stylesheet">
-    <title>FCHMAINTENANCE</title>
+    <title>PISOS DE LA BAJURA S.A.</title>
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/main2.css" rel="stylesheet">
@@ -64,7 +64,7 @@
         <br>
         <div class="col-xs-12"><hr></div>
         <h1><?php echo $product_name; ?></h1>
-        <h8><a href="index.php" style="color: green"> Home </a> > <a href="" style="color: green"><?php echo $category_name; ?></a> > <a style="color: gray"><?php echo $product_name; ?></a></h8>
+        <h8><a href="index.php" style="color: green"> Inicio </a> > <a href="" style="color: green"><?php echo $category_name; ?></a> > <a style="color: gray"><?php echo $product_name; ?></a></h8>
    
         <hr>
     <div class="row">
@@ -134,7 +134,7 @@
 <ul id="clothing-nav" class="nav nav-tabs" role="tablist" >
 	
 <li class="nav-item">
-<a class="nav-link active" href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true" style="color:black">Description</a>
+<a class="nav-link active" href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true" style="color:black">Descripción</a>
 
 </li>
 
