@@ -89,7 +89,7 @@
   </div>  
   <div class="post"> 
     <!-- colored -->
-    <div class="ih-item square colored effect6 from_top_and_bottom"><a href="green_cleaning.php">
+    <div class="ih-item square colored effect6 from_top_and_bottom"><a href="#">
         <div class="img"><img src="img/Main/Revestimiento.jpg" style="height:185px;" alt="img"></div>
         <div class="info">
           <h3>Revestimiento</h3>
