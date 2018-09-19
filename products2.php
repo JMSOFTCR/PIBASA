@@ -24,7 +24,28 @@
 
       
     <?php include('conn.php');
-     $query=mysqli_query($conn,"select * from product where categoryid = 1 order by product_name");  
+     
+        if (isset($_GET['id'])){
+    $id = $_GET['id'];
+    $nro_reg=$_GET['id'];      
+    $sql = "select * from product as p where p.productid = \"$id\"";
+    $result = mysqli_query($conn, $sql);
+                                }
+
+        if(mysqli_num_rows($result) > 0){
+        while($row = mysqli_fetch_array($result)){
+        $id = $row['productid'];
+        $product_name = $row['product_name'];
+        $price = $row['product_price'];  
+        $photo = $row['photo'];
+        $category_name = $row['category_name'];
+    }
+        } else {
+    echo "";
+        }
+
+      $id = $_GET['id']; 
+     $query=mysqli_query($conn,"select * from product where categoryid = \"$id\" order by product_name");  
     $nro_reg=mysqli_num_rows($query); 
     $Total = $nro_reg;
 
@@ -39,8 +60,8 @@
         else 
         $inicio=0;
       
-      
-       $query=mysqli_query($conn,"select * from product where categoryid = 1 order by product_name limit $inicio,$reg_por_pagina");  
+       $id = $_GET['id'];
+       $query=mysqli_query($conn,"select * from product where categoryid = \"$id\" order by product_name limit $inicio,$reg_por_pagina");  
       
       $can_paginas=ceil($nro_reg / $reg_por_pagina);
       ?>
@@ -56,24 +77,25 @@
     <div class="container">
 
       <!-- Page Heading/Breadcrumbs -->
-    
+  
 <div class="container">
 <div style="height: 50px;"></div>
-    <h1 style=" ">Morteros</h1>
+    <h1 style=" ">Productos</h1>
       
        <div class="row">
         <div class="col-lg-12">
-            <img src="img/Bannerp/mortero.png" style="width: 80%;">
+            <img src="img/Bannerp/ceramica2.jpg" style="width: 100%;">
         </div>
         </div>
 <div style="height: 50px;"></div>
    
+     
 
       <ol class="breadcrumb">
         <li class="breadcrumb-item">
           <a href="index.php" style="color:black">Inicio</a>
         </li>
-        <li class="breadcrumb-item active">Mortero</li>
+        <li class="breadcrumb-item active"></li>
       </ol>
 
     <a style="color: gray" >Disponemos de <?php echo $Total ?> productos</a>
@@ -132,17 +154,17 @@
            <div align="center">
       <?php
           if($nro_pagina>1)
-              echo "<a style='background-color:#262424; border-radius:5px;' href='Mortero.php?num=".($nro_pagina-1)."'> Anterior ></a> ";
+              echo "<a style='background-color:#262424; border-radius:5px;' href='products.php?num=".($nro_pagina-1)."'> Anterior ></a> ";
               
        for ($i=1; $i<=$can_paginas; $i++){
            if ($i==$nro_pagina)
                echo $i." ";
            else 
-               echo "<a href='Mortero.php?num=$i'>$i</a> ";
+               echo "<a href='products.php?num=$i'>$i</a> ";
        } 
           
           if($nro_pagina<$can_paginas)
-               echo "<a style='background-color:#262424; border-radius:5px;' href='Mortero.php?num=".($nro_pagina+1)."'> Siguiente ></a> ";
+               echo "<a style='background-color:#262424; border-radius:5px;' href='products.php?num=".($nro_pagina+1)."'> Siguiente ></a> ";
           
        ?>
       </div>

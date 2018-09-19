@@ -94,19 +94,19 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PRODUCTOS</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="vidrio_block.php">Vidrio Block</a>
+                        <a class="dropdown-item" href="products.php?id=1">Cerámica Para pisos</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="">Imagenes y Murales</a>
+                        <a class="dropdown-item" href="products.php?id=7">Grifería</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="Floor_seccion.php">Pisos y Enchapes Españoles</a>
+                        <a class="dropdown-item" href="products.php?id=18">Muebles</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="batteries.php">AlttoGlass</a>
+                        <a class="dropdown-item" href="products.php?id=5">LISTELOS Y CENEFAS</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="parts_and_accessories.php">Revestimiento</a>
+                        <a class="dropdown-item" href="products.php?id=6">LOZA SANITARIA</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="green_cleaning.php" >Liquidación</a>
+                        <a class="dropdown-item" href="products.php?id=15" >TABLILLA DE PVC</a>
                         <div class="dropdown-divider"></div>  
-                        <a class="dropdown-item" href="Mortero.php" >Morteros</a>
+                        <a class="dropdown-item" href="products.php?id=3" >Morteros</a>
                         <div class="dropdown-divider"></div>  
                     </div>
                 </li>
