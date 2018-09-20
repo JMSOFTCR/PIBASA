@@ -19,7 +19,7 @@
     <link href="css/modern-business.css" rel="stylesheet">
     <link href="css/card.css" rel="stylesheet">
     <link href="css/ihover.css" rel="stylesheet">
-    <link href="css/hover.css" rel="stylesheet">
+
      
 
       
@@ -44,12 +44,7 @@
     echo "";
         }
 
-      
-     $result = $conn->query("SELECT COUNT(*) as total_products FROM product WHERE categoryid = \"$id\"");
-     $row = $result->fetch_assoc();
-     $num_total_rows = $row['total_products']; 
-   
-      
+      $id = $_GET['id']; 
      $query=mysqli_query($conn,"select * from product where categoryid = \"$id\" order by product_name");  
     $nro_reg=mysqli_num_rows($query); 
     $Total = $nro_reg;
@@ -76,8 +71,6 @@
 
   <body>
 
-  
-   
     <!-- Navigation -->
     <?php include './inc/nav.php';?>  
     <!-- Page Content -->
@@ -105,7 +98,7 @@
         <li class="breadcrumb-item active"></li>
       </ol>
 
-    <a style="color: gray" >Disponemos de <?php echo $num_total_rows ?> productos</a>
+    <a style="color: gray" >Disponemos de <?php echo $Total ?> productos</a>
     
 	<div style="height: 50px;"></div>
 	<div> 
@@ -160,52 +153,20 @@
       <!-- Pagination -->
            <div align="center">
       <?php
-//Si hay registros
-if ($num_total_rows > 0) {
-    $num_pages = ceil($num_total_rows / NUM_ITEMS_BY_PAGE);
-    $result = $conn->query(
-        'SELECT * FROM product p 
-        LEFT JOIN product_lang pl ON (pl.id_product = p.id_product AND pl.id_lang = 1) 
-        LEFT JOIN image i ON (i.id_product = p.id_product AND cover = 1) 
-        WHERE active = 1 
-        ORDER BY date_upd DESC 
-        LIMIT 0, '.NUM_ITEMS_BY_PAGE
-    );
-    if ($result->num_rows > 0) {
-        echo '<ul class="row items">';
-        while ($row = $result->fetch_assoc()) {
-            echo '<li class="col-lg-4">';
-            echo '<div class="item">';
-            echo '<h3>'.$row['name'].'</h3>';
-            echo '...';
-            echo '</div>';
-            echo '</li>';
- 
-        }
-        echo '</ul>';
-    }
- 
-    if ($num_pages > 1) {
-        echo '<div class="row">';
-        echo '<div class="col-lg-12">';
-        echo '<nav aria-label="Page navigation example">';
-        echo '<ul class="pagination justify-content-end">';
- 
-        for ($i=1;$i<=$num_pages;$i++) {
-            $class_active = '';
-            if ($i == 1) {
-                $class_active = 'active';
-            }
-            echo '<li class="page-item '.$class_active.'"><a class="page-link" href="#" data="'.$i.'">'.$i.'</a></li>';
-        }
- 
-        echo '</ul>';
-        echo '</nav>';
-        echo '</div>';
-        echo '</div>';
-    }
-}
-?>
+          if($nro_pagina>1)
+              echo "<a style='background-color:#262424; border-radius:5px;' href='products.php?num=".($nro_pagina-1)."'> Anterior ></a> ";
+              
+       for ($i=1; $i<=$can_paginas; $i++){
+           if ($i==$nro_pagina)
+               echo $i." ";
+           else 
+               echo "<a href='products.php?num=$i'>$i</a> ";
+       } 
+          
+          if($nro_pagina<$can_paginas)
+               echo "<a style='background-color:#262424; border-radius:5px;' href='products.php?num=".($nro_pagina+1)."'> Siguiente ></a> ";
+          
+       ?>
       </div>
     </div>
     <!-- /.container -->
@@ -221,27 +182,3 @@ if ($num_total_rows > 0) {
   </body>
 
 </html>
-
-
-<script type="text/javascript">
-$(document).ready(function() {	
-    $('.pagination li a').on('click', function(){
-        $('.items').html('<div class="loading"><img src="images/loading.gif" width="70px" height="70px"/><br/>Un momento por favor...</div>');
- 
-        var page = $(this).attr('data');		
-        var dataString = 'page='+page;
- 
-        $.ajax({
-            type: "GET",
-            url: "ajax.php",
-            data: dataString,
-            success: function(data) {
-                $('.items').fadeIn(2000).html(data);
-                $('.pagination li').removeClass('active');
-                $('.pagination li a[data="'+page+'"]').parent().addClass('active');
-            }
-        });
-        return false;
-    });              
-});    
-</script>
