@@ -65,9 +65,7 @@
             
          </div>
         </li></li>
-                                            <li id="cartme" style="cursor:pointer">
-                                            <a class="nav-item nav-link" id="cart_control" title="Shopping Cart" data-toggle="popover"><i class="fa fa-shopping-cart fa-fw" id="cartir"></i></a>
-                                            </li>
+                                           
                                    
                                     </div>
                                   
@@ -75,9 +73,7 @@
                             }else{
                                 echo ' 
                                           <a class="nav-item nav-link" href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-user text-white"> Login</i></a>
-                                       <h4><li id="cartme" style="cursor:pointer">
-                                            <a class="nav-item nav-link" id="cart_control" title="Carrito de compras" data-toggle="popover"><i class="fa fa-shopping-cart fa-fw" id="cartir"></i></a>
-                                            </li></h4>
+                                    
                                  ';
                             }
                         ?>

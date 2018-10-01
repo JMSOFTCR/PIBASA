@@ -9,12 +9,14 @@ if(isset($_POST['page'])){
     $start = !empty($_POST['page'])?$_POST['page']:0;
     $limit = 10;
     
+    $id = $_SESSION['$id'];
+    
     //set conditions for search
     $whereSQL = $orderSQL = '';
     $keywords = $_POST['keywords'];
     $sortBy = $_POST['sortBy'];
     if(!empty($keywords)){
-        $whereSQL = "WHERE title LIKE '%".$keywords."%'";
+        $whereSQL = "WHERE where categoryid = \"$id\" and product_name LIKE '%".$keywords."%'";
     }
     if(!empty($sortBy)){
         $orderSQL = " ORDER BY productid ".$sortBy;
@@ -46,7 +48,7 @@ if(isset($_POST['page'])){
                 $postID = $row['productid'];
                  $name = $row['product_name'];                
                 $photo = $row['photo'];                
-                $price = $row['price'];   
+                $price = $row['product_price'];   
         ?>
             <div class="list_item"><a href="javascript:void(0);">
             <div class="ih-item square colored effect4" style="height:200px; ">

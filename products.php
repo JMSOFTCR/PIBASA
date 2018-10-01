@@ -1,15 +1,14 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-      
-      <link href="vendor/bootstrap/css/footer.css" rel="stylesheet">
+
+    <link href="vendor/bootstrap/css/footer.css" rel="stylesheet">
     <title>PISOS DE LA BAJURA S.A.</title>
     <?php include './inc/link.php'; ?>
     <!-- Bootstrap core CSS -->
@@ -19,166 +18,207 @@
     <link href="css/modern-business.css" rel="stylesheet">
     <link href="css/card.css" rel="stylesheet">
     <link href="css/ihover.css" rel="stylesheet">
+    <link href="css/hover.css" rel="stylesheet">
 
-     
 
-      
-    <?php include('conn.php');
-     
-        if (isset($_GET['id'])){
-    $id = $_GET['id'];
-    $nro_reg=$_GET['id'];      
-    $sql = "select * from product as p where p.productid = \"$id\"";
-    $result = mysqli_query($conn, $sql);
-                                }
-
-        if(mysqli_num_rows($result) > 0){
-        while($row = mysqli_fetch_array($result)){
-        $id = $row['productid'];
-        $product_name = $row['product_name'];
-        $price = $row['product_price'];  
-        $photo = $row['photo'];
-        $category_name = $row['category_name'];
-    }
-        } else {
-    echo "";
-        }
-
-      $id = $_GET['id']; 
-     $query=mysqli_query($conn,"select * from product where categoryid = \"$id\" order by product_name");  
-    $nro_reg=mysqli_num_rows($query); 
-    $Total = $nro_reg;
-
+<style>
     
-      
-    $reg_por_pagina=8; 
-      
-    @$nro_pagina=$_GET['num']; 
     
-    if(is_numeric($nro_pagina))
-        $inicio=($nro_pagina-1)*$reg_por_pagina;
-        else 
-        $inicio=0;
-      
-       $id = $_GET['id'];
-       $query=mysqli_query($conn,"select * from product where categoryid = \"$id\" order by product_name limit $inicio,$reg_por_pagina");  
-      
-      $can_paginas=ceil($nro_reg / $reg_por_pagina);
-      ?>
+div.pagination {
+    font-family: "Lucida Sans", Geneva, Verdana, sans-serif;
+    padding:20px;
+    margin:7px;
+}
+div.pagination a {
+    margin: 2px;
+    padding: 0.5em 0.64em 0.43em 0.64em;
+    background-color: #ee4e4e;
+    text-decoration: none;
+    color: #fff;
+}
+div.pagination a:hover, div.pagination a:active {
+    padding: 0.5em 0.64em 0.43em 0.64em;
+    margin: 2px;
+    background-color: #de1818;
+    color: #fff;
+}
+div.pagination span.current {
+    padding: 0.5em 0.64em 0.43em 0.64em;
+    margin: 2px;
+    background-color: #f6efcc;
+    color: #6d643c;
+}
+div.pagination span.disabled {
+    display:none;
+}
+    .loading-overlay {
+display: none;
+}
+    </style>
+
+</head>
+ <!-- Navigation -->
+    <?php include './inc/nav.php';?>
+    
+    
+    
+<body>
+
+   <!-- Pagination -->
+    
         
-      
-  </head>
-
-  <body>
-
-    <!-- Navigation -->
-    <?php include './inc/nav.php';?>  
-    <!-- Page Content -->
+        <!-- /Pagination -->
     <div class="container">
-
-      <!-- Page Heading/Breadcrumbs -->
-  
-<div class="container">
-<div style="height: 50px;"></div>
-    <h1 style=" ">Productos</h1>
-      
-       <div class="row">
-        <div class="col-lg-12">
-            <img src="img/Bannerp/ceramica2.jpg" style="width: 100%;">
-        </div>
-        </div>
-<div style="height: 50px;"></div>
-   
-     
-
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item">
-          <a href="index.php" style="color:black">Inicio</a>
-        </li>
-        <li class="breadcrumb-item active"></li>
-      </ol>
-
-    <a style="color: gray" >Disponemos de <?php echo $Total ?> productos</a>
-    
-	<div style="height: 50px;"></div>
-	<div> 
-        
-	<?php
-		$inc=4;
-		
-		while($row=mysqli_fetch_array($query)){
-            
-         $id=$row['productid'];
-         $name=$row['product_name'];
-         $photo=$row['photo'];
-         $price=$row['product_price'];
-			
-			$inc = ($inc == 4) ? 1 : $inc+1; 
-			if($inc == 1) echo "<div class='row'>";  
-			
-			?>
-				<div class="col-sm-3">
-
-  <div class="row">
- 
- 
-    <!-- colored -->
-    <div class="ih-item square colored effect4" style="height:200px; "><a id="enviar">
-        <div class="img"><img src="POS/<?php if (empty($photo)){echo "upload/noimage.jpg";}else{echo $photo;} ?>" alt="img" style="width:200px;"></div>
-        <div class="mask1"></div>
-        <div class="mask2"></div>
-        <div class="info">  
-          <h3 style="text-align:left"><?php echo $name; ?></h3>
-          <h4>₡ <?php echo $price; ?></h4>
-             <form action="details.php" method="post" name="Detalle"><input name="id_txt" type="hidden" value="<?php echo $id; ?>" /><input name="Detalles" type="submit" value="Detalles" class="btn btn-info" /></form>
-        </div></a></div>
-    <!-- end colored -->
- 
-
-    
-  </div>
-                    
-				</div>
-			<?php
-           
-		if($inc == 4) echo "</div><div style='height: 30px;'></div>";
-		}
-		if($inc == 1) echo "<div class='col-lg-3></div><div class='col-lg-3'></div><div class='col-lg-3'></div></div>"; 
-		if($inc == 2) echo "<div class='col-lg-3'></div><div class='col-lg-3'></div></div>"; 
-		if($inc == 3) echo "<div class='col-lg-3'></div></div>"; 
-	?>
-	</div>
-</div>
+        <!-- Open Container -->
         <div style="height: 50px;"></div>
-      <!-- Pagination -->
-           <div align="center">
-      <?php
-          if($nro_pagina>1)
-              echo "<a style='background-color:#262424; border-radius:5px;' href='products.php?num=".($nro_pagina-1)."'> Anterior ></a> ";
-              
-       for ($i=1; $i<=$can_paginas; $i++){
-           if ($i==$nro_pagina)
-               echo $i." ";
-           else 
-               echo "<a href='products.php?num=$i'>$i</a> ";
-       } 
+        <h1 style=" ">Productos</h1>
+
+  
+            <div class="col-lg-12">
+                <img src="img/Bannerp/ceramica2.jpg" style="width: 100%;">
+            </div>
+
+        <div style="height: 50px;"></div>
+
+    
+
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="index.php" style="color:black">Inicio</a>
+            </li>
+            <li class="breadcrumb-item active"></li>
+        </ol>
+
+        <a style="color: gray">Disponemos de <?php echo $rowCounts ?> productos</a>
+
+        <div style="height: 50px;"></div>
+        
+        <div class="post-search-panel">
+    <input type="text" id="keywords" placeholder="Type keywords to filter posts" onkeyup="searchFilter()"/>
+    <select id="sortBy" onchange="searchFilter()">
+        <option value="">Sort By</option>
+        <option value="asc">Ascending</option>
+        <option value="desc">Descending</option>
+    </select>
+</div>
+<div class="post-wrapper">
+    <div class="loading-overlay"><div class="overlay-content">Loading.....</div></div>
+    <div id="posts_content">
+    <?php
+    //Include pagination class file
+    include('Pagination.php');
+    
+    //Include database configuration file
+    include('conn.php');
+    
+    $limit = 9;
+    
+    //get number of rows
+    if (isset($_GET['id']))
+    {
+        $id = $_GET['id'];
+        $_SESSION['id'] = $id;
+    }
+            
+    $queryNum = $conn->query("SELECT COUNT(*) as postNum FROM product where categoryid = \"$id\"");
+    $resultNum = $queryNum->fetch_assoc();
+    $rowCount = $resultNum['postNum'];
+    
+    //initialize pagination class
+    $pagConfig = array(
+        'totalRows' => $rowCount,
+        'perPage' => $limit,
+        'link_func' => 'searchFilter'
+    );
+    $pagination =  new Pagination($pagConfig);
+    
+    //get rows
+    $query = $conn->query("SELECT * FROM product where categoryid = \"$id\" ORDER BY productid DESC LIMIT $limit");
+    
+    if($query->num_rows > 0){ ?>
+        <div class="posts_list">
+        <?php
+            while($row = $query->fetch_assoc()){ 
+                $postID = $row['productid'];
+                $name = $row['product_name'];                
+                $photo = $row['photo'];                
+                $price = $row['product_price'];                
+        ?>
+                  
           
-          if($nro_pagina<$can_paginas)
-               echo "<a style='background-color:#262424; border-radius:5px;' href='products.php?num=".($nro_pagina+1)."'> Siguiente ></a> ";
-          
-       ?>
-      </div>
+           
+            <div class="d-inline-flex p-4">
+
+           <div class="ih-item square colored effect4" style="height:200px; ">
+                <a id="enviar">
+                    <div class="img"><img src="POS/<?php if (empty($photo)){echo " upload/noimage.jpg ";}else{echo $photo;} ?>" alt="img" style="width:200px;"></div>
+                    <div class="mask1"></div>
+                    <div class="mask2"></div>
+                    <div class="info">
+                        <h3 style="text-align:left">
+                            <?php echo $name; ?>
+                        </h3>
+                        <h4>₡
+                            <?php echo $price; ?>
+                        </h4>
+                        <form action="details.php" method="post" name="Detalle"><input name="id_txt" type="hidden" value="<?php echo $id; ?>" /><input name="Detalles" type="submit" value="Detalles" class="btn btn-info" /></form>
+                    </div>
+                </a>
+            </div>
+            </div>
+       
+    
+            
+        <?php } ?>
+        </div>
+        <?php echo $pagination->createLinks(); ?>
+    <?php } ?>
     </div>
+</div>
+
+    </div>
+    <!-- close Container -->
+
+
+    <div style="height: 50px;"></div>
+    <!-- Pagination -->
+    <div align="center">
+
+    </div>
+
     <!-- /.container -->
 
     <!-- Footer -->
-     <?php include './inc/footer.php'; ?>  
+    <?php include './inc/footer.php'; ?>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+     	        <script src="http://demos.codexworld.com/includes/js/bootstrap.js"></script>
+
     <script src="vendor/popper/popper.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
-  </body>
+</body>
 
 </html>
+
+
+<script>
+function searchFilter(page_num) {
+    page_num = page_num?page_num:0;
+    var keywords = $('#keywords').val();
+    var sortBy = $('#sortBy').val();
+    $.ajax({
+        type: 'POST',
+        url: 'getData.php',
+        data:'page='+page_num+'&keywords='+keywords+'&sortBy='+sortBy,
+        beforeSend: function () {
+            $('.loading-overlay').show();
+        },
+        success: function (html) {
+            $('#posts_content').html(html);
+            $('.loading-overlay').fadeOut("slow");
+        }
+    });
+}
+</script>
