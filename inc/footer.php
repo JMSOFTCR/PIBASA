@@ -79,9 +79,7 @@
                                
                                      <a class="dropdown-item" href="#account" data-toggle="modal" style="color:white"><img src="svg/si-glyph-flower.svg"/ style="width:24px; height:24px;"> Mi Cuenta</a>
                                      <a class="dropdown-item" href="#profile" data-toggle="modal" style="color:white"><img src="svg/si-glyph-man-doctor.svg"/ style="width:24px; height:24px;"> My Profile</a>
-                                      <li id="cartme" style="cursor:pointer">
-                                            <a class="nav-item nav-link" id="cart_control" title="Shopping Cart" data-toggle="popover" style="color:white"><img src="svg/si-glyph-trolley-2.svg"/ style="width:24px; height:24px;"> My Shopping Cart</a>
-                                            </li>
+                                      
                                   
                                  ';
                             }else{
@@ -90,7 +88,7 @@
                                              <a class="dropdown-item" href="#myModal" data-toggle="modal" style="color:white"><img src="svg/si-glyph-flower.svg"/ style="width:24px; height:24px;"> Mi Cuenta</a>
                                              <a class="dropdown-item" href="#myModal" data-toggle="modal" style="color:white"><img src="svg/si-glyph-man-doctor.svg"/ style="width:24px; height:24px;"> Mi Perfil</a>
                                             
-                                            <a class="nav-item nav-link" id="cart_control" title="Shopping Cart" data-toggle="popover" style="color:white"><img src="svg/si-glyph-trolley-2.svg"/ style="width:24px; height:24px;"> My Shopping Cart</a>
+                                        
                                           
                                  
                                  ';

@@ -80,7 +80,7 @@
         </p>-->
         <hr>
       <!-- Team Members -->
-        <div class="container scrollflow -slide-right -opacity ">
+        <div class=" scrollflow -slide-right -opacity ">
       <h2>Nuestro Equipo</h2>
         <div class="row">
   <div class="col-sm-4">

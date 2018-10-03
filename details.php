@@ -125,9 +125,11 @@
                         <form class="form-inline" id="envCart">
                             <div class="form-group">
                                 <input id="idp" type="hidden" value="<?php echo $id; ?>">
+<!--
                                 <label for="qty">Qty:</label>
                                 <input type="number" style="width:80px;height:30x" class="form-control" id="qty" min="0" step="1" min="0" step="1" value="0" onchange="valid()">
                                 <button type="submit" class="btn btn-success disabled" required style="margin-left:5px;" disabled="true" id="btnCart">Add to Cart</button>
+-->
                                 <div id="divani"></div>
 
                             </div>
