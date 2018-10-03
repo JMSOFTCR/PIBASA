@@ -50,50 +50,50 @@
         
 <div class="post">
     <!-- colored -->
-    <div class="ih-item square colored effect6 from_top_and_bottom"><a href="equipment_restoration.php">
-        <div class="img"><img src="img/Main/vidrioblock.jpg" style="height:185px;" alt="img"></div>
+    <div class="ih-item square colored effect6 from_top_and_bottom"><a href="griferia.php">
+        <div class="img"><img src="img/Main/griferia.JPG" style="height:185px;" alt="img"></div>
         <div class="info">
-          <h3>Vidrio Block</h3>
+          <h3>Grifería</h3>
 
         </div></a></div>
     <!-- end colored -->
 </div>
 <div class="post">
     <!-- colored -->
-    <div class="ih-item square colored effect6 from_top_and_bottom"><a href="parts_and_accessories.php">
-        <div class="img"><img src="img/Main/Mural.JPG" style="height:185px;" alt="img"></div>
+    <div class="ih-item square colored effect6 from_top_and_bottom"><a href="tablilla.php">
+        <div class="img"><img src="img/Main/pvc.png" style="height:185px;" alt="img"></div>
         <div class="info">
-          <h3>Imagenes y Murales</h3>
+          <h3>Tablillas PVC</h3>
 
         </div></a></div>
     <!-- end colored -->
   </div>
 <div class="post"> 
     <!-- colored -->
-    <div class="ih-item square colored effect6 from_top_and_bottom"><a href="batteries.php">
+    <div class="ih-item square colored effect6 from_top_and_bottom"><a href="ceramica.php">
         <div class="img"><img src="img/Main/Lamosa.jpg" style="height:185px;" alt="img"></div>
         <div class="info">
-          <h3>Pisos y Enchapados Españoles</h3>
+          <h3>Cerámica Para Pisos</h3>
 
         </div></a></div>
     <!-- end colored -->
   </div>
   <div class="post"> 
     <!-- colored -->
-    <div class="ih-item square colored effect6 from_top_and_bottom"><a href="#">
-        <div class="img"><img src="img/Main/ALTTOGLASS.jpg" style="height:185px;" alt="img"></div>
+    <div class="ih-item square colored effect6 from_top_and_bottom"><a href="loza.php">
+        <div class="img"><img src="img/Main/loza.jpg" style="height:185px;" alt="img"></div>
         <div class="info">
-          <h3>AlttoGlass</h3>
+          <h3>Loza Sanitaria</h3>
 
         </div></a></div>
     <!-- end colored -->
   </div>  
   <div class="post"> 
     <!-- colored -->
-    <div class="ih-item square colored effect6 from_top_and_bottom"><a href="#">
-        <div class="img"><img src="img/Main/Revestimiento.jpg" style="height:185px;" alt="img"></div>
+    <div class="ih-item square colored effect6 from_top_and_bottom"><a href="listelos.php">
+        <div class="img"><img src="img/Main/listelos.jpg" style="height:185px;" alt="img"></div>
         <div class="info">
-          <h3>Revestimiento</h3>
+          <h3>Listelos y Cenefas</h3>
 
         </div></a></div>
     <!-- end colored -->
